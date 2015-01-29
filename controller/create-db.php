@@ -1,3 +1,17 @@
 <?php
-    require_once("../model/database.php");
+    require_once(__DIR__ . "/../model/database.php");
 
+    $connection = new mysqli($host, $username, $password);
+    
+    if($connection->connect_error) {
+        die("Error: " .$connection->connect_error);
+    }
+    
+    $exists = $connectio->select_db($database);
+    
+    if(!$exists) {
+        echo "Database does not exist";
+    }
+
+    
+    $connection->close();
