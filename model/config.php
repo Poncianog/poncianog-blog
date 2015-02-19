@@ -12,7 +12,7 @@
     // isset is if you're not connected then it will connect you
     if(!isset($_SESSION["connection"])) {
         $connection = new Database($host, $username, $password, $database);
-        $SESSION_["connection"] = $connection;
+        $_SESSION["connection"] = $connection;
     }
     
     
