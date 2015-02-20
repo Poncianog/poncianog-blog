@@ -6,11 +6,16 @@
     
     <div>
         <label for="usernane">Username: </label>
-        <input type="text"
+        <input type="text" name="username" />
     </div>
     
     <div>
-        
+        <label for="password">Password: </label>
+        <input type="password" name="password" />
+    </div>
+    
+    <div>
+        <button type="submit">Submit</button>
     </div>
 </form>
 
