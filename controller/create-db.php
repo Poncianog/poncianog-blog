@@ -26,5 +26,5 @@
         echo "<p>Succesfully created table: users</p>";
     }
     else {
-        echo "<p>" . $_SESSION["connnection"]->error . "</p>";
+        echo "<p>" . $_SESSION["connection"]->error . "</p>";
     }
