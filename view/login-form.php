@@ -1,7 +1,8 @@
 <?php
+//Labels the password and Username onto the login, then Submits it.
     require_once(__DIR__ . "/../model/config.php");
 ?>
-
+   
 <h1>Login</h1>
 
 <form>
